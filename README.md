@@ -10,6 +10,10 @@ of values.
 ### MaxIntSet
 - Initialize with integer `max` to define the range
 of integers that we're keeping track of.
+- internal structure:
+  - array of length `max`
+  - index corresponds to item, value corresponds to presence (either true
+  or false)
 - methods:
   - `insert`
   - `remove`
@@ -109,3 +113,5 @@ that it's worth making a new class.
 - After removing the least recently accessed node from the LRU list, be 
 sure to physically remove it from the cache as well. Otherwise the cache will
 continue to track it, despite it having been removed from the LRU list.
+
+## Phase 4: enumerable methods
