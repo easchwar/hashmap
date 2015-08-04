@@ -24,6 +24,8 @@ of integers that we're keeping track of.
 - Starts to get interesting here. Still define the size of the
 hash, but now instead of pointing to `true` or `false` it points to
 an array.
+- modulo the number by the set's length, and add it to the array at that
+location. The set includes the number if it is present in that bucket.
 - can now keep track of an arbitrary range of integers.
 
 ### ResizingIntSet
