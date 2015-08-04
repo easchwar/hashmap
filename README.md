@@ -38,11 +38,11 @@ easier.
 **Code Review**
 
 ## Interlude: Hashing
-Hashing is a mathematical operation to return a fixed-length 
-number from an arbitrary length sequence of characters. We need a (nearly)
-unique hash for unique items, so for more complex data types (arrays, strings,
-hashes, custom objects), we need to account for each item in a string, 
-or array. [More Info][hash-info].
+Hashing is a mathematical operation to return a number from an arbitrary 
+length sequence of characters. We need a (nearly) unique hash for unique 
+items, so for more complex data types (arrays, strings, hashes, custom 
+objects), we need to account for each publicly exposed property. 
+[More Info][hash-info].
 - Write hash functions for Array, String, Hash
   - order is important for arrays and strings, not for hashes
     - keep track of indexes for arrays and strings
@@ -129,3 +129,5 @@ that it's worth making a new class.
 sure to physically remove it from the cache as well. Otherwise the cache will
 continue to track it, despite it having been removed from the LRU list.
 
+## Phase Bonus: Dynamic Array
+TBD...
